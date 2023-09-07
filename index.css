@@ -1,0 +1,41 @@
+body {
+  padding: 0 12rem;
+}
+
+#main-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#nav-container {
+  width: 25%;
+  position: sticky;
+  top: 2rem;
+  height: fit-content;
+  padding: 1rem 1rem;
+}
+
+#content-container {
+  width: 70%;
+}
+
+#introduction {
+  padding: 1rem 1rem;
+}
+
+#stuff {
+  padding: 1rem 1rem;
+}
+
+#projects-container {
+  padding: 1rem 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  border: 1px solid rgba(59, 0, 41, 0.574);
+}
