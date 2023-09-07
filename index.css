@@ -29,6 +29,27 @@ body {
 
 #projects-container {
   padding: 1rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (width <= 1280px) {
+  #projects-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (width <= 1024px) {
+  #projects-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.project-card {
+  padding: 1rem 1rem;
+  margin: 0.5rem 0.5rem;
+  border-radius: 0rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
 }
 
 header {
