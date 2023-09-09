@@ -3,8 +3,12 @@ body {
   justify-content: center;
 }
 
+#marquee {
+  margin: 0.5rem 0.5rem;
+}
+
 #container {
-  width: 70%;
+  width: 60%;
 }
 
 #flex {
@@ -13,6 +17,7 @@ body {
 }
 
 #nav-container {
+  margin: 0.5rem 0.5rem;
   width: 25%;
   position: sticky;
   top: 2rem;
@@ -24,33 +29,45 @@ body {
   width: 70%;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
 .content {
-  padding: 1rem 1rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0.5rem;
 }
 
 #projects-container {
+  margin: 0.5rem 0.5rem;
   padding: 1rem 1rem;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   #projects-container {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1500px) {
   #projects-container {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
 .project-card {
-  padding: 1rem 1rem;
   margin: 0.5rem 0.5rem;
-  border-radius: 0rem;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+  height: 10rem;
+  width: 8rem;
+  box-shadow: 0 0 0.5rem rgba(3, 5, 59, 0.2);
+}
+
+.card-title {
+  display: flex;
+  justify-content: center;
 }
 
 header {
@@ -59,7 +76,7 @@ header {
 }
 
 * {
-  border: 1px solid rgba(59, 0, 41, 0.574);
+  border: 1px solid rgba(7, 0, 59, 0.574);
 }
 
 #coverart {
