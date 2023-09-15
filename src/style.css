@@ -3,8 +3,19 @@ body {
   justify-content: center;
 }
 
+li {
+  word-break: break-all;
+}
+
+#title {
+  text-align: center;
+}
+
 #container {
-  width: 50%;
+  max-width: 80rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #flex {
@@ -13,7 +24,17 @@ body {
   justify-content: space-evenly;
 }
 
+header {
+  margin: auto;
+  overflow-x: visible;
+  width: 0;
+  display: flex;
+  justify-content: center;
+}
+
 #nav-container {
+  width: 30%;
+  background-color: white;
   position: sticky;
   margin: 0.5rem 0.5rem;
   width: 25%;
@@ -29,14 +50,31 @@ body {
   width: 70%;
 }
 
-@media screen and (max-width: 1100px) {
+#counter {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 800px) {
   #flex {
     flex-direction: column;
   }
   #nav-container {
     width: auto;
     margin-left: 0.5rem;
-    position: static;
+  }
+
+  /* code stolen from sadgrl.net*/
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-image: none;
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  nav li {
+    margin-right: 1rem;
   }
 
   #content-container {
@@ -66,41 +104,29 @@ body {
 }
 
 #projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   margin: 0.5rem 0.5rem;
   padding: 1rem 1rem;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
   border: 3px solid rgba(0, 0, 0, 1);
   border-radius: 0.5rem;
 }
 
-@media (min-width: 1300px) {
-  #projects-container {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-
-@media (min-width: 1700px) {
-  #projects-container {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-}
-
 .project-card {
   margin: 0.5rem 0.5rem;
-  height: 10rem;
-  width: 8rem;
+  height: 11rem;
+  width: 128px;
   box-shadow: 0 0 0.5rem rgba(3, 5, 59, 0.2);
 }
 
 .card-title {
   display: flex;
+  text-align: center;
+  align-items: center;
   justify-content: center;
-}
-
-header {
-  display: flex;
-  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 * {
