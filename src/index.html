@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <script src="assets/scripts/scripts.js"></script>
 
   <div id="border-image-left"></div>
 
@@ -25,10 +26,10 @@
 
     <div id="flex">
       <nav id="nav-container">
-        NAVIGATION
+        <h3>NAVIGATION</h3>
         <ul>
-          <li>
-            <a href="index.html">Home</a>
+          <li class="dyslexic">
+            <a href=" index.html">Home</a>
           </li>
           <li>
             <a href="about.html">About</a>
@@ -37,113 +38,133 @@
             <a href="projects.html">Projects</a>
           </li>
         </ul>
+
+        <label id="changefont-container" for="changefont">Dyslexic Font:
+          <input type="checkbox" id="changefont" name="changefont" onclick="changeFont()">
+        </label>
+
       </nav>
+
       <div id="content-container">
         <section class="content">
-          INTRO
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis pulvinar est, a cursus sem. Pellentesque
-          imperdiet
+
+          <h3>WELCOME!</h3>
+          <p id="test">
+            Welcome to my website! It's still very much a work in progress, so don't expect much. I'm still learning
+            HTML and CSS.
+          </p>
+          <p>
+            Here, have some lorem ipsum: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis pulvinar est,
+            a cursus sem. Pellentesque
+            imperdiet
+          </p>
           <p id="counter">
             Unique Visitor Counter:
             <script type="text/javascript" src="//counter.websiteout.net/js/7/8/100/1"></script>
           </p>
-          enim quis tellus molestie facilisis. Phasellus sollicitudin arcu nibh, eget venenatis mauris sodales nec.
-          Duis
-          non
-          elit pharetra, mollis enim sed, posuere enim. Nunc suscipit lectus a ullamcorper porta. Proin mollis justo
-          non
-          semper lobortis. Ut massa metus, viverra eget tincidunt tincidunt, sagittis id nulla. Aliquam vehicula
-          euismod
-          sollicitudin.
+          <p>
+            enim quis tellus molestie facilisis. Phasellus sollicitudin arcu nibh, eget venenatis mauris sodales nec.
+            Duis
+            non
+            elit pharetra, mollis enim sed, posuere enim. Nunc suscipit lectus a ullamcorper porta. Proin mollis justo
+            non
+            semper lobortis. Ut massa metus, viverra eget tincidunt tincidunt, sagittis id nulla. Aliquam vehicula
+            euismod
+            sollicitudin.
+          </p>
+
         </section>
         <section class="content">
-          STUFF
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis pulvinar est, a cursus sem. Pellentesque
-          Cras vel diam sem. Maecenas vel enim feugiat, mattis nisi id, tempus nunc. Aliquam odio mi, eleifend cursus
-          ligula
-          a, luctus placerat nunc. Morbi pretium vitae elit sit amet ultricies. Nulla in tristique mi. Nam id sagittis
-          augue.
-          Sed porttitor nisl venenatis lobortis blandit. Pellentesque eu sem nisi. Mauris ut mauris non lectus
-          pharetra
-          laoreet vel molestie arcu. Integer vel auctor nibh. Morbi imperdiet, dui eget faucibus aliquam, nibh risus
-          finibus
-          dui, non rutrum sem odio in tortor. Maecenas varius cursus magna, sed rhoncus dui hendrerit sit amet. Fusce
-          neque
-          ipsum, pulvinar faucibus aliquam sed, fringilla et felis. Sed congue diam vulputate cursus ultricies.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis pulvinar est, a cursus sem. Pellentesque
-          imperdiet
-          enim quis tellus molestie facilisis. Phasellus sollicitudin arcu nibh, eget venenatis mauris sodales nec.
-          Duis
-          non
-          elit pharetra, mollis enim sed, posuere enim. Nunc suscipit lectus a ullamcorper porta. Proin mollis justo
-          non
-          semper lobortis. Ut massa metus, viverra eget tincidunt tincidunt, sagittis id nulla. Aliquam vehicula
-          euismod
-          sollicitudin.
 
+          <h3>TEST</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis pulvinar est, a cursus sem. Pellentesque
+            Cras vel diam sem. Maecenas vel enim feugiat, mattis nisi id, tempus nunc. Aliquam odio mi, eleifend cursus
+            ligula
+            a, luctus placerat nunc. Morbi pretium vitae elit sit amet ultricies. Nulla in tristique mi. Nam id sagittis
+            augue.
+            Sed porttitor nisl venenatis lobortis blandit. Pellentesque eu sem nisi. Mauris ut mauris non lectus
+            pharetra
+            laoreet vel molestie arcu. Integer vel auctor nibh. Morbi imperdiet, dui eget faucibus aliquam, nibh risus
+            finibus
+            dui, non rutrum sem odio in tortor. Maecenas varius cursus magna, sed rhoncus dui hendrerit sit amet. Fusce
+            neque
+            ipsum, pulvinar faucibus aliquam sed, fringilla et felis. Sed congue diam vulputate cursus ultricies.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis pulvinar est, a cursus sem. Pellentesque
+            imperdiet
+            enim quis tellus molestie facilisis. Phasellus sollicitudin arcu nibh, eget venenatis mauris sodales nec.
+            Duis
+            non
+            elit pharetra, mollis enim sed, posuere enim. Nunc suscipit lectus a ullamcorper porta. Proin mollis justo
+            non
+            semper lobortis. Ut massa metus, viverra eget tincidunt tincidunt, sagittis id nulla. Aliquam vehicula
+            euismod
+            sollicitudin.
+          </p>
           <p>Aenean commodo elit erat:</p>
           <ul>
             <li>the poopeeodere</li>
             <li>th shungoranodon</li>
             <li>reallyreallyreallylongtestphrasetocheckifmycsscodeisright</li>
           </ul>
+          <p>
+            Cras vel diam sem. Maecenas vel enim feugiat, mattis nisi id, tempus nunc. Aliquam odio mi, eleifend cursus
+            ligula
+            a, luctus placerat nunc. Morbi pretium vitae elit sit amet ultricies. Nulla in tristique mi. Nam id sagittis
+            augue.
+            Sed porttitor nisl venenatis lobortis blandit. Pellentesque eu sem nisi. Mauris ut mauris non lectus
+            pharetra
+            laoreet vel molestie arcu. Integer vel auctor nibh. Morbi imperdiet, dui eget faucibus aliquam, nibh risus
+            finibus
+            dui, non rutrum sem odio in tortor. Maecenas varius cursus magna, sed rhoncus dui hendrerit sit amet. Fusce
+            neque
+            ipsum, pulvinar faucibus aliquam sed, fringilla et felis. Sed congue diam vulputate cursus ultricies.
+            <img id="coverart" src="assets/images/blue.PNG" alt="My 3D cover art render">
+            Nam pellentesque auctor metus, a ultrices lectus euismod eu. Praesent feugiat ligula sed ex dictum commodo
+            at
+            vitae
+            nisl. Donec eleifend erat et ligula efficitur, aliquet volutpat ligula feugiat. Phasellus posuere a mi in
+            fringilla.
+            Etiam eu ligula quis mauris congue blandit. Maecenas quis iaculis nisl. Pellentesque ut sem erat. Nulla
+            hendrerit
+            lacus et sem fermentum lobortis. Ut venenatis euismod maximus. Maecenas faucibus eros eu turpis aliquet, ut
+            faucibus
+            nunc accumsan. Curabitur dignissim dolor quis varius sagittis. Etiam quis felis et nisl vulputate posuere.
+            Pellentesque dictum molestie lacus auctor sagittis. Aliquam non vestibulum urna. Proin mattis felis libero,
+            sit amet
+            luctus mauris pharetra facilisis.
 
-          Cras vel diam sem. Maecenas vel enim feugiat, mattis nisi id, tempus nunc. Aliquam odio mi, eleifend cursus
-          ligula
-          a, luctus placerat nunc. Morbi pretium vitae elit sit amet ultricies. Nulla in tristique mi. Nam id sagittis
-          augue.
-          Sed porttitor nisl venenatis lobortis blandit. Pellentesque eu sem nisi. Mauris ut mauris non lectus
-          pharetra
-          laoreet vel molestie arcu. Integer vel auctor nibh. Morbi imperdiet, dui eget faucibus aliquam, nibh risus
-          finibus
-          dui, non rutrum sem odio in tortor. Maecenas varius cursus magna, sed rhoncus dui hendrerit sit amet. Fusce
-          neque
-          ipsum, pulvinar faucibus aliquam sed, fringilla et felis. Sed congue diam vulputate cursus ultricies.
-          <img id="coverart" src="assets/images/blue.PNG" alt="My 3D cover art render">
-          Nam pellentesque auctor metus, a ultrices lectus euismod eu. Praesent feugiat ligula sed ex dictum commodo
-          at
-          vitae
-          nisl. Donec eleifend erat et ligula efficitur, aliquet volutpat ligula feugiat. Phasellus posuere a mi in
-          fringilla.
-          Etiam eu ligula quis mauris congue blandit. Maecenas quis iaculis nisl. Pellentesque ut sem erat. Nulla
-          hendrerit
-          lacus et sem fermentum lobortis. Ut venenatis euismod maximus. Maecenas faucibus eros eu turpis aliquet, ut
-          faucibus
-          nunc accumsan. Curabitur dignissim dolor quis varius sagittis. Etiam quis felis et nisl vulputate posuere.
-          Pellentesque dictum molestie lacus auctor sagittis. Aliquam non vestibulum urna. Proin mattis felis libero,
-          sit amet
-          luctus mauris pharetra facilisis.
+            Ut et cursus nulla. Aliquam augue enim, egestas eget euismod id, vestibulum sed purus. Curabitur semper odio
+            eu
+            lacus semper, quis pellentesque quam porttitor. Vestibulum sit amet est auctor mauris vehicula pellentesque
+            quis
+            condimentum velit. Sed sed lectus vel turpis lacinia porttitor ut sit amet erat. Interdum et malesuada fames
+            ac ante
+            ipsum primis in faucibus. Vestibulum interdum nulla sit amet metus commodo pellentesque. Vivamus ac arcu
+            eget
+            libero
+            rhoncus maximus vitae gravida ante. Mauris auctor vel enim vitae feugiat.
 
-          Ut et cursus nulla. Aliquam augue enim, egestas eget euismod id, vestibulum sed purus. Curabitur semper odio
-          eu
-          lacus semper, quis pellentesque quam porttitor. Vestibulum sit amet est auctor mauris vehicula pellentesque
-          quis
-          condimentum velit. Sed sed lectus vel turpis lacinia porttitor ut sit amet erat. Interdum et malesuada fames
-          ac ante
-          ipsum primis in faucibus. Vestibulum interdum nulla sit amet metus commodo pellentesque. Vivamus ac arcu
-          eget
-          libero
-          rhoncus maximus vitae gravida ante. Mauris auctor vel enim vitae feugiat.
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. In sed elit felis. Maecenas a orci sapien.
+            Cras
+            cursus
+            metus non urna ullamcorper fermentum. Nunc dignissim sapien sit amet lacus rhoncus commodo. Ut aliquet ipsum
+            sed
+            justo iaculis aliquet et id dolor. Phasellus quis tellus libero. Nullam dapibus est lectus, et viverra nulla
+            suscipit quis. Nullam eu quam sed risus tincidunt hendrerit sit amet id leo.
 
-          Interdum et malesuada fames ac ante ipsum primis in faucibus. In sed elit felis. Maecenas a orci sapien.
-          Cras
-          cursus
-          metus non urna ullamcorper fermentum. Nunc dignissim sapien sit amet lacus rhoncus commodo. Ut aliquet ipsum
-          sed
-          justo iaculis aliquet et id dolor. Phasellus quis tellus libero. Nullam dapibus est lectus, et viverra nulla
-          suscipit quis. Nullam eu quam sed risus tincidunt hendrerit sit amet id leo.
-
-          Morbi nec gravida quam, ut sagittis tellus. Pellentesque nulla sapien, ullamcorper non neque sit amet,
-          euismod
-          euismod turpis. Nullam convallis feugiat nulla, sit amet auctor augue consectetur vel. Aenean id sodales
-          erat.
-          Curabitur tempus, purus nec hendrerit efficitur, quam enim venenatis arcu, id eleifend leo lorem id mauris.
-          Praesent
-          libero urna, porta eget justo cursus, sollicitudin sodales turpis. Ut blandit elit risus, nec pulvinar enim
-          egestas
-          eget. Vivamus vestibulum sapien vel feugiat eleifend. Aenean commodo mauris a libero porta interdum. Donec
-          molestie
-          nibh mauris, id tristique sapien consequat non. Praesent eget mauris eros. Donec a enim massa.
+            Morbi nec gravida quam, ut sagittis tellus. Pellentesque nulla sapien, ullamcorper non neque sit amet,
+            euismod
+            euismod turpis. Nullam convallis feugiat nulla, sit amet auctor augue consectetur vel. Aenean id sodales
+            erat.
+            Curabitur tempus, purus nec hendrerit efficitur, quam enim venenatis arcu, id eleifend leo lorem id mauris.
+            Praesent
+            libero urna, porta eget justo cursus, sollicitudin sodales turpis. Ut blandit elit risus, nec pulvinar enim
+            egestas
+            eget. Vivamus vestibulum sapien vel feugiat eleifend. Aenean commodo mauris a libero porta interdum. Donec
+            molestie
+            nibh mauris, id tristique sapien consequat non. Praesent eget mauris eros. Donec a enim massa.
+          </p>
         </section>
       </div>
     </div>
