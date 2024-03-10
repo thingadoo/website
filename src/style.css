@@ -1,9 +1,16 @@
 :root {
   --content-color: rgb(255, 127, 39);
-  --light-orange: rgb(255, 178, 96);
+  --secondary-color: rgb(255, 178, 96);
   --accent: rgb(250, 234, 62);
+  --accent2: rgb(46, 255, 245);
   --text-color: black;
   --shadow: rgba(14, 0, 32, 0.2);
+  --highlight: rgb(185, 255, 239);
+  --link-color: rgb(105, 0, 162);
+}
+
+#threeonetwoseven {
+  background-color: black;
 }
 
 body {
@@ -11,6 +18,11 @@ body {
   justify-content: center;
   background-color: rgb(49, 0, 97);
   overflow-x: hidden;
+}
+
+#ninefivesevenoneeight {
+  display: flex;
+  justify-content: center;
 }
 
 head {
@@ -47,6 +59,10 @@ head {
   src: url(assets/fonts/pixellari/Pixellari.ttf) format("truetype");
 }
 
+::selection {
+  background-color: var(--highlight);
+}
+
 p,
 li {
   font-family: "Warung Kopi", sans-serif;
@@ -76,6 +92,16 @@ h3 {
   margin-top: 0%;
   padding: 0.5rem 1rem;
   border-radius: 0.1rem;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent);
+  text-decoration: underline;
 }
 
 li {
@@ -109,7 +135,7 @@ li {
   font-family: "Pixellari", sans-serif;
   font-size: 2.5em;
   text-align: center;
-  color: rgb(46, 255, 245);
+  color: var(--accent2);
   -webkit-text-stroke: 0.5px rgb(79, 63, 255);
 }
 
@@ -196,10 +222,10 @@ header {
   }
 }
 
-.footer {
+#footer {
   display: flex;
   justify-content: center;
-  color: rgb(46, 255, 245);
+  color: var(--accent2);
 }
 
 .content {

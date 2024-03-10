@@ -1,12 +1,12 @@
-var check = localStorage.setItem("isChecked", "0");
+document.cookie = "fontboxchecked=0; path=/";
+let fontbox = document.cookie;
 
 function changeFont() {
+  var decider = document.getElementById('changefont');
   const li = document.querySelectorAll("li");
   const p = document.querySelectorAll("p");
 
-  var decider = document.getElementById('changefont');
-
-  if (decider.checked || check == "1") {
+  if (decider.checked || fontbox.includes("fontboxchecked=1")) {
     li.forEach(element => {
       element.style.fontFamily = "Open Dyslexic";
       element.style.fontSize = "1.1em";
@@ -15,9 +15,8 @@ function changeFont() {
       element.style.fontFamily = "Open Dyslexic";
       element.style.fontSize = "1.1em";
     });
-    decider.checked = true;
-    localStorage.setItem("isChecked", "1");
-  } else {
+    document.cookie = "fontboxchecked=1; path=/";
+  } else if (!decider.checked) {
     li.forEach(element => {
       element.style.fontFamily = "Warung Kopi";
       element.style.fontSize = "1.3em";
@@ -28,3 +27,5 @@ function changeFont() {
     });
   }
 }
+
+window.onload = changeFont();
