@@ -59,15 +59,48 @@ head {
   src: url(assets/fonts/pixellari/Pixellari.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "Noto Sans Display";
+  src: url(assets/fonts/Noto_Sans_Display/static/NotoSansDisplay-Medium.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans Display";
+  src: url(assets/fonts/Noto_Sans_Display/static/NotoSansDisplay-MediumItalic.ttf)
+    format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "VT323";
+  src: url(assets/fonts/VT323/VT323-Regular.ttf) format("truetype");
+}
+
 ::selection {
   background-color: var(--highlight);
+  color: var(--text-color);
 }
 
 p,
 li {
-  font-family: "Warung Kopi", sans-serif;
+  font-family: "Noto Sans Display", sans-serif;
   color: var(--text-color);
-  font-size: 1.6em;
+  font-size: 1.4em;
+}
+
+p {
+  padding: 0.5rem 1rem;
+}
+
+#PARAGRAPH {
+  font-family: "VT323", sans-serif;
+  color: white;
+  font-size: 2em;
+}
+
+#BACKGROUND {
+  background-color: darkblue;
 }
 
 #changefont-container {
@@ -79,10 +112,6 @@ li {
 
 label {
   font-family: "Open Dyslexic", sans-serif;
-}
-
-p {
-  padding: 0.5rem 1rem;
 }
 
 h3 {
