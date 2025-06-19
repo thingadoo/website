@@ -9,20 +9,11 @@
   --link-color: rgb(30, 0, 165);
 }
 
-#threeonetwoseven {
-  background-color: black;
-}
-
 body {
   display: flex;
   justify-content: center;
   background-color: rgb(49, 0, 97);
   overflow-x: hidden;
-}
-
-#ninefivesevenoneeight {
-  display: flex;
-  justify-content: center;
 }
 
 head {
@@ -87,10 +78,20 @@ li {
   font-family: "Noto Sans Display", sans-serif;
   color: var(--text-color);
   font-size: 1.4em;
+  margin: 0.3em;
 }
 
 p {
-  padding: 0.5rem 1rem;
+  padding: 0rem 1rem;
+}
+
+ol {
+  margin: 0.3em;
+}
+
+ul {
+  margin: 0.3em;
+  list-style-type: "•︎   ";
 }
 
 #PARAGRAPH {
@@ -167,7 +168,7 @@ li {
   font-size: 3em;
   text-align: center;
   color: rgb(79, 63, 255);
-  -webkit-text-stroke: 0.1px var(--accent2);
+  -webkit-text-stroke: 1px var(--accent2);
 }
 
 #container {
@@ -195,6 +196,7 @@ header {
   width: 30%;
   position: sticky;
   margin: 0.5rem 0.5rem;
+  padding-bottom: 1em;
   width: 25%;
   top: 1rem;
   /* don't remove top: 1rem */
@@ -269,6 +271,7 @@ header {
 
 .content {
   margin: 0.5rem 0.5rem;
+  padding-bottom: 1em;
   background-color: var(--content-color);
   box-shadow: 0.5rem 0.5rem 0.5rem var(--shadow);
   border-style: solid;

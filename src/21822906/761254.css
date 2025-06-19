@@ -1,0 +1,62 @@
+:root {
+  --content-color: rgb(255, 127, 39);
+  --secondary-color: rgb(255, 178, 96);
+  --accent: rgb(250, 234, 62);
+  --accent2: rgb(46, 255, 245);
+  --text-color: black;
+  --shadow: rgba(14, 0, 32, 0.2);
+  --highlight: rgb(185, 255, 239);
+  --link-color: rgb(30, 0, 165);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(49, 0, 97);
+  overflow-x: hidden;
+}
+
+head {
+  display: flex;
+  justify-content: center;
+}
+
+@font-face {
+  font-family: "Open Dyslexic";
+  src: url(assets/fonts/open_dyslexic/OpenDyslexic-Regular.otf)
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Noto Sans Display";
+  src: url(assets/fonts/Noto_Sans_Display/static/NotoSansDisplay-Medium.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans Display";
+  src: url(assets/fonts/Noto_Sans_Display/static/NotoSansDisplay-MediumItalic.ttf)
+    format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "VT323";
+  src: url(../assets/fonts/VT323/VT323-Regular.ttf) format("truetype");
+}
+
+::selection {
+  background-color: var(--highlight);
+  color: var(--text-color);
+}
+
+p {
+  font-family: "VT323", sans-serif;
+  color: white;
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+body {
+  background-color: darkblue;
+}
