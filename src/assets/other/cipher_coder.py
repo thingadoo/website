@@ -32,7 +32,7 @@ special_characters = "!@#$%^&*()_+{}|:<>?-=[];',./"
 out: int = 1
 out_special_character: str = ""
 
-x: str = input("input message: ")
+x: str = input("input message to be encoded: ")
 x = x.lower()
 li = list(x.split(" "))
 for i in li:

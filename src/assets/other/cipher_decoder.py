@@ -33,7 +33,7 @@ special_characters = "!@#$%^&*()_+{}|:<>?-=[];',./"
 
 cipher_dict_swapped = {v: k for k, v in cipher_dict.items()}
 
-inpu: str = input("input message: ")
+inpu: str = input("input message to be decoded: ")
 li = list(str(inpu).split(" "))
 for n in li:
     n = int(n)
