@@ -6,14 +6,30 @@
   --text-color: black;
   --shadow: rgba(14, 0, 32, 0.2);
   --highlight: rgb(185, 255, 239);
-  --link-color: rgb(30, 0, 165);
-}
+  --link-color: rgb(227, 175, 255);
 
-body {
-  display: flex;
-  justify-content: center;
-  background-color: rgb(49, 0, 97);
-  overflow-x: hidden;
+  --BACKGROUND-COLOR: rgb(0, 90, 20);
+
+  --COLOR-BLUE: rgb(39, 77, 165);
+  --COLOR-CYAN: rgb(0, 183, 149);
+  --COLOR-GREEN: rgb(43, 165, 45);
+  --COLOR-YELLOW: rgb(186, 158, 0);
+  --COLOR-ORANGE: rgb(183, 115, 25);
+  --COLOR-RED: rgb(135, 45, 45);
+  --COLOR-PINK: rgb(165, 23, 144);
+  --COLOR-PURPLE: rgb(117, 22, 175);
+
+  --COLOR-DARK-BLUE: rgb(28, 45, 87);
+  --COLOR-DARK-CYAN: rgb(0, 114, 91);
+  --COLOR-DARK-GREEN: rgb(0, 107, 0);
+  --COLOR-DARK-YELLOW: rgb(112, 93, 0);
+  --COLOR-DARK-ORANGE: rgb(109, 64, 18);
+  --COLOR-DARK-RED: rgb(99, 0, 0);
+  --COLOR-DARK-PINK: rgb(114, 16, 101);
+  --COLOR-DARK-PURPLE: rgb(73, 0, 119);
+
+  --COLOR-WHITE: rgb(192, 192, 192);
+  --COLOR-BLACK: rgb(38, 38, 38);
 }
 
 head {
@@ -45,9 +61,30 @@ head {
   src: url(../assets/fonts/VT323/VT323-Regular.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "Xanmono";
+  src: url(../assets/fonts/xanmono/Xanmono-Regular.ttf) format("truetype");
+}
+
 ::selection {
   background-color: var(--highlight);
   color: var(--text-color);
+}
+
+body {
+  background-color: var(--BACKGROUND-COLOR);
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  padding-left: 5em;
+  padding-right: 5em;
+  margin: 3em 0em;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 p {
@@ -57,6 +94,114 @@ p {
   line-height: 1.5em;
 }
 
-body {
-  background-color: darkblue;
+.PUZZLE {
+  display: flex;
+  justify-content: center;
+  font-size: 5em;
+  font-family: "Xanmono", "Courier New", Courier, monospace;
+  line-height: 1em;
+  white-space: pre;
+  margin: 0.1em 0em;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+a:hover > .PUZZLE {
+  outline: 0.1em dashed;
+}
+
+.charletter {
+  color: var(--COLOR-WHITE);
+  background-color: var(--COLOR-DARK-BLUE);
+}
+
+.char\_ {
+  color: var(--BACKGROUND-COLOR);
+}
+
+.char\/ {
+  color: var(--COLOR-YELLOW);
+  background-color: var(--COLOR-DARK-PINK);
+}
+
+.char\? {
+  color: var(--COLOR-BLACK);
+  background-color: var(--COLOR-WHITE);
+}
+
+.char\! {
+  color: var(--COLOR-WHITE);
+  background-color: var(--COLOR-BLACK);
+}
+
+.char\‡ {
+  color: var(--COLOR-PINK);
+  background-color: var(--COLOR-DARK-PURPLE);
+}
+
+.char0 {
+  color: var(--COLOR-GREEN);
+  background-color: var(--COLOR-DARK-RED);
+}
+
+.char\+ {
+  color: var(--COLOR-BLUE);
+  background-color: var(--COLOR-ORANGE);
+}
+
+.char\~ {
+  color: var(--COLOR-BLACK);
+  background-color: var(--COLOR-CYAN);
+}
+
+.char\☡ {
+  color: var(--COLOR-DARK-BLUE);
+  background-color: var(--COLOR-GREEN);
+}
+
+.char\∞ {
+  color: var(--COLOR-YELLOW);
+  background-color: var(--COLOR-PINK);
+}
+
+.char\▞ {
+  color: var(--COLOR-DARK-BLUE);
+  background-color: var(--COLOR-DARK-RED);
+}
+
+.char\(,
+.char\) {
+  color: var(--COLOR-YELLOW);
+  background-color: var(--COLOR-BLUE);
+}
+
+.char\{,
+.char\} {
+  color: var(--COLOR-CYAN);
+  background-color: var(--COLOR-BLUE);
+}
+
+.char\⌐,
+.char\¬ {
+  color: var(--COLOR-GREEN);
+  background-color: var(--COLOR-BLUE);
+}
+
+.char\⏴,
+.char\⏵ {
+  color: var(--COLOR-DARK-PURPLE);
+  background-color: var(--COLOR-BLUE);
+}
+
+.char\◤,
+.char\◢ {
+  color: var(--COLOR-WHITE);
+  background-color: var(--COLOR-BLUE);
 }
